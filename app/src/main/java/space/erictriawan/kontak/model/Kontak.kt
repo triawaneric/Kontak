@@ -8,5 +8,5 @@ data class Kontak(
     @SerializedName("firstName") @Expose var fName: String? = null,
     @SerializedName("lastName") @Expose var lName: String? = null,
     @SerializedName("email") @Expose var email: String? = null,
-    @SerializedName("phone") @Expose var phone: String? = null
+    @SerializedName("phone") @Expose var phone: String? = null,
 )

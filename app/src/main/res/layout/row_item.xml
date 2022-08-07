@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:src="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <!--items for a single row of RecyclerView-->
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/selectedCardColor"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="50dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false">
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#000"/>
+</androidx.cardview.widget.CardView>
